@@ -7,8 +7,12 @@ import org.bukkit.command.CommandSender;
 public class Login implements CommandExecutor {
 
 	@Override
-	public boolean onCommand(CommandSender arg0, Command arg1, String arg2, String[] arg3) {
-		
+	public boolean onCommand(CommandSender sender, Command cmd, String arg, String[] args) {
+		if (sender instanceof Player) {
+		if (LogUtils.isRegister(²)) {
+			
+		}
+	}
 		return false;
 	}
 

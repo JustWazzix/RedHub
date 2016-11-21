@@ -23,6 +23,7 @@ public class Core extends JavaPlugin{
 		super.onEnable();
 		instance = this;
 		ListenerManager.registerEvents();
+		registerCmd();
 	}
 	
 	@Override

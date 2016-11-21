@@ -4,7 +4,7 @@ import org.bukkit.entity.Player;
 
 public class LogUtils {
 	
-	public static boolean isRegister(Player p) {
+	public static boolean isRegister(Player player) {
 		
 		return false;
 	}

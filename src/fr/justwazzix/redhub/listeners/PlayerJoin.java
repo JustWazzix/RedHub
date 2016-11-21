@@ -6,6 +6,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
 import fr.justwazzix.redhub.Core;
+import fr.justwazzix.redhub.login.LogUtils;
 
 public class PlayerJoin implements Listener {
 	
@@ -15,7 +16,9 @@ public class PlayerJoin implements Listener {
 	public void onPlayerJoin(PlayerJoinEvent event) {
 		c = Core.getInstance();
 		Player player = event.getPlayer();
-		
+		if (LogUtils.isRegister(player)) {
+			
+		}
 	}
 
 }
