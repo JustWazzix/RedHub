@@ -55,5 +55,11 @@ public class Register implements CommandExecutor {
 		}
 		return false;
 	}
+	
+	public static YamlConfiguration getLoginFile(Player p) {
+		user = new File("plugins/Redhub/logins/" + p.getName() + ".yml");
+		yc = YamlConfiguration.loadConfiguration(user);
+		return yc;
+	}
 
 }
