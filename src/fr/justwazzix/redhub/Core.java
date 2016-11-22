@@ -7,6 +7,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import fr.justwazzix.redhub.listeners.ListenerManager;
 import fr.justwazzix.redhub.login.Login;
+import fr.justwazzix.redhub.login.Register;
 
 public class Core extends JavaPlugin{
 	
@@ -33,6 +34,7 @@ public class Core extends JavaPlugin{
 	
 	private void registerCmd() {
 		getCommand("login").setExecutor(new Login());
+		getCommand("register").setExecutor(new Register());
 	}
 	
 }
